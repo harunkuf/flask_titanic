@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titanic Prediction</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="static/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-image">
+                    <img class="booking-img" src="static/images/form-img.jpg" alt="Booking Image">
+                </div>
+                <div class="booking-form">
+                    <form id="booking-form" action="/prediction" method="POST">
+                        <h2>Would you have survived the Titanic?</h2>
+                        <div class="form-group form-input">
+                            <label class="form-label" for="Age">How old are you?</label>
+                            <input type="text" id="Age" name="Age" required/>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select id="Sex" name="Sex" required>
+                                    <option value="">Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="0">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select id="Pclass" name="Pclass" required>
+                                    <option value="">Which ticket class would you have bought?</option>
+                                    <option value="1">First-class</option>
+                                    <option value="2">Second-Class</option>
+                                    <option value="3">Third-Class</option> 
+                                </select>
+                                <a href="#" class="vertify-booking">The ticket prices for the Titanic today would have been: $350-$900 for Third-Class, $1,375 for Second-Class and ranging from $3,500 to $50,000 for First-Class</a>
+                            </div>
+                        </div>
+                        <div class="form-group form-input">
+                            <label class="form-label" for="Parch">Number of parents / childeren that would have been aboard the Titanic </label>
+                            <input type="Parch" id="Parch" name="Parch" required/>
+                        </div>
+                        <div class="form-group form-input">
+                            <input type="SibSp" id="SibSp" name="SibSp" required/>
+                            <label class="form-label" for="SibSp">Number of siblings / spouses that would have been aboard the Titanic </label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select id="IsMother" name="IsMother" required>
+                                    <option value="">Are you a mother with childeren on board? </option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                                <a href="#" class="vertify-booking">blabla</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-submit">
+                            <input type="submit" value="Predict" class="submit"/>
+                            <a href="http://furkankufrevi.com" class="vertify-booking">Designed by MFK</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
